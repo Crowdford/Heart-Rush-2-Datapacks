@@ -13,7 +13,7 @@ setblock 14002 48 14000 minecraft:air
 
 ## Pumpkin Patch Panic
 # Red
-summon armor_stand 14000 50 14042 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[180f,0f],ArmorItems:[{},{},{},{id:"emerald",Count:1,tag:{CustomModelData:2}}]}
+summon item_display 14000 50 14042 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[0f,0f],item:{id:"emerald",Count:1,tag:{CustomModelData:2}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]}}
 summon area_effect_cloud 14000 50.5 14040 {CustomName:'{"translate":"game.shop","color":"red"}',CustomNameVisible:1b,Radius:0.0f,Duration:2147483647,Tags:["game","shopName"]}
 summon area_effect_cloud 14000 54.2 14042 {Radius:0.0f,Duration:2147483647,Tags:["game","red_spawn","spawn"],Rotation:[180f,0f]}
 summon area_effect_cloud 14000 50 14050 {Radius:0.0f,Duration:2147483647,Tags:["game","hole","red_hole"]}
@@ -25,7 +25,7 @@ summon minecraft:armor_stand 13987.5 51.1 14052.5 {NoGravity:1b,Invulnerable:1b,
 summon minecraft:armor_stand 14003.5 54.1 14057.5 {NoGravity:1b,Invulnerable:1b,ShowArms:1b,DisabledSlots:4144959,Pose:{RightArm:[1.0f,0.0f,86.0f],LeftLeg:[-1.0f,0.0f,9.0f],Head:[0.0f,0.0f,5.0f],LeftArm:[1.0f,0.0f,271.0f],RightLeg:[1.0f,0.0f,352.0f]},Rotation:[-225.0f,56.0f],ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:13648728},Damage:0}},{id:"minecraft:leather_leggings",Count:1b,tag:{Damage:0}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:13648728},Damage:0}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I; 1770996893,-1010941912,-1188459183,575546981],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTlkZWUyZTgxNGNkNGI1ZTkzM2Q4ZjJiMzBhMGJjMmE1ODM1NTJjYmUzZGFlNTgxYmVjMDlmYmI2ZWIwN2UifX19"}]}}}}],NoBasePlate:1b,Tags:["game"]}
 
 # Blue
-summon armor_stand 14000 50 13958 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[0f,0f],ArmorItems:[{},{},{},{id:"emerald",Count:1,tag:{CustomModelData:3}}]}
+summon item_display 14000 50 13958 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[180f,0f],item:{id:"emerald",Count:1,tag:{CustomModelData:3}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]}}
 summon area_effect_cloud 14000 50.2 13960 {CustomName:'{"translate":"game.shop","color":"blue"}',CustomNameVisible:1b,Radius:0.0f,Duration:2147483647,Tags:["game","shopName"]}
 summon area_effect_cloud 14000 54.2 13958 {Radius:0.0f,Duration:2147483647,Tags:["game","blue_spawn","spawn"],Rotation:[0f,0f]}
 summon area_effect_cloud 14000 50 13950 {Radius:0.0f,Duration:2147483647,Tags:["game","hole","blue_hole"]}
@@ -37,7 +37,7 @@ summon minecraft:armor_stand 14013.50 51.10 13948.50 {NoGravity:1b,Invulnerable:
 summon minecraft:armor_stand 13997.50 54.10 13943.50 {NoGravity:1b,Invulnerable:1b,ShowArms:1b,DisabledSlots:4144959,Pose:{RightArm:[1.0f,0.0f,86.0f],LeftLeg:[-1.0f,0.0f,9.0f],Head:[0.0f,0.0f,5.0f],LeftArm:[1.0f,0.0f,271.0f],RightLeg:[1.0f,0.0f,352.0f]},Rotation:[-45.0f,56.0f],ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:4356813},Damage:0}},{id:"minecraft:leather_leggings",Count:1b,tag:{Damage:0}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:4356813},Damage:0}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I; 1770996893,-1010941912,-1188459183,575546981],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTlkZWUyZTgxNGNkNGI1ZTkzM2Q4ZjJiMzBhMGJjMmE1ODM1NTJjYmUzZGFlNTgxYmVjMDlmYmI2ZWIwN2UifX19"}]}}}}],NoBasePlate:1b,Tags:["game"]}
 
 # Green
-summon armor_stand 13958 50 14000 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[-90f,0f],ArmorItems:[{},{},{},{id:"emerald",Count:1,tag:{CustomModelData:4}}]}
+summon item_display 13958 50 14000 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[90f,0f],item:{id:"emerald",Count:1,tag:{CustomModelData:4}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]}}
 summon area_effect_cloud 13960 50.5 14000 {CustomName:'{"translate":"game.shop","color":"green"}',CustomNameVisible:1b,Radius:0.0f,Duration:2147483647,Tags:["game","shopName"]}
 summon area_effect_cloud 13958 54.2 14000 {Radius:0.0f,Duration:2147483647,Tags:["game","green_spawn","spawn"],Rotation:[-90f,0f]}
 summon area_effect_cloud 13950 50 14000 {Radius:0.0f,Duration:2147483647,Tags:["game","hole","green_hole"]}
@@ -50,7 +50,7 @@ summon minecraft:armor_stand 13943.5 54.1 14003.5 {NoGravity:1b,Invulnerable:1b,
 
 
 # Yellow
-summon armor_stand 14042 50 14000 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[90f,0f],ArmorItems:[{},{},{},{id:"emerald",Count:1,tag:{CustomModelData:5}}]}
+summon item_display 14042 50 14000 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[-90f,0f],item:{id:"emerald",Count:1,tag:{CustomModelData:5}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]}}
 summon area_effect_cloud 14040 50.5 14000 {CustomName:'{"translate":"game.shop","color":"yellow"}',CustomNameVisible:1b,Radius:0.0f,Duration:2147483647,Tags:["game","shopName"]}
 summon area_effect_cloud 14042 54.2 14000 {Radius:0.0f,Duration:2147483647,Tags:["game","yellow_spawn","spawn"],Rotation:[90f,0f]}
 summon area_effect_cloud 14050 50 14000 {Radius:0.0f,Duration:2147483647,Tags:["game","hole","yellow_hole"]}

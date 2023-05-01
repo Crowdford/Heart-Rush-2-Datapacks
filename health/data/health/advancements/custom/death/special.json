@@ -6,14 +6,33 @@
       "conditions": {
         "damage": {
           "type": {
-            "is_explosion": false,
-            "is_fire": false,
-            "is_magic": false,
-            "is_projectile": false,
             "is_lightning": false,
-            "bypasses_armor": true,
-            "bypasses_invulnerability": false,
-            "bypasses_magic": false
+            "tags": [
+              {
+                "id": "minecraft:is_projectile",
+                "expected": true
+              },
+              {
+                "id": "minecraft:is_explosion",
+                "expected": true
+              },
+              {
+                "id": "minecraft:bypasses_armor",
+                "expected": true
+              },
+              {
+                "id": "minecraft:bypasses_invulnerability",
+                "expected": true
+              },
+              {
+                "id": "minecraft:is_fire",
+                "expected": true
+              },
+              {
+                "id": "minecraft:is_lightning",
+                "expected": true
+              }
+            ]
           }
         }
       }

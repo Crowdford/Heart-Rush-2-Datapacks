@@ -1,9 +1,3 @@
-#say parsing!
-# parse
-function s_str:call
-
-# remove skull
-setblock 1 0 0 air
-
-# callback
-schedule function application_cape:internal_fake/callback 2t
+data modify storage string:new in set from block 1 0 0 SkullOwner.Properties.textures[0].Value
+function string:parse
+function application_cape:internal_fake/callback

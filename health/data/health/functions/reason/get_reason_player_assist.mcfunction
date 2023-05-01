@@ -3,7 +3,7 @@ tag @s add temp
 execute as @a if score @s playerID = @p[tag=temp] deathLPlayerID run tag @s add temp2
 execute as @a if score @s playerID = @p[tag=temp] deathPPlayerID run tag @s add temp3
 execute as @p[tag=temp2] run function health:triggers/kill
-execute as @p[tag=temp3] run function health:triggers/kill
+execute as @p[tag=temp3] run function health:triggers/assist
 
 execute if score @s deathLType matches 0 run data modify block 0 1 0 Text1 set value '[{"translate":"death.assist.unknown2","with":[[{"selector":"@p[tag=temp,team=!red]"},{"selector":"@p[tag=temp,team=red]","color":"#FF5556"}],[{"selector":"@p[tag=temp2,team=!red]"},{"selector":"@p[tag=temp2,team=red]","color":"#FF5556"}],[{"selector":"@p[tag=temp3,team=!red]"},{"selector":"@p[tag=temp3,team=red]","color":"#FF5556"}]]}]'
 execute if score @s deathLType matches 1 run data modify block 0 1 0 Text1 set value '[{"translate":"death.assist.explosion","with":[[{"selector":"@p[tag=temp,team=!red]"},{"selector":"@p[tag=temp,team=red]","color":"#FF5556"}],[{"selector":"@p[tag=temp2,team=!red]"},{"selector":"@p[tag=temp2,team=red]","color":"#FF5556"}],[{"selector":"@p[tag=temp3,team=!red]"},{"selector":"@p[tag=temp3,team=red]","color":"#FF5556"}]]}]'

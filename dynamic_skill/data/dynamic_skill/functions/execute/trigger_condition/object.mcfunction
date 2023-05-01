@@ -1,1 +1,1 @@
-execute unless score @e[type=armor_stand,limit=1,tag=skillObject,distance=..0.5] ObjectSkill = $id SkillParams run scoreboard players set trigger_condition dynamic_skill 0
+execute unless score @e[type=block_display,limit=1,tag=skillObject,distance=..0.5] ObjectSkill = $id SkillParams run scoreboard players set trigger_condition dynamic_skill 0

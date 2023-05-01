@@ -7,4 +7,8 @@ item replace entity @s armor.feet with leather_boots{display:{Name:'{"translate"
 item replace entity @s armor.head with air
 
 team join lobby_fire @s
-effect give @s glowing 999999 120 true
+effect give @s glowing infinite 120 true
+effect clear @s jump_boost
+effect clear @s fire_resistance
+effect clear @s jump_boost
+effect clear @s fire_resistance

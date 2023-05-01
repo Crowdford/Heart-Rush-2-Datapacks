@@ -5,5 +5,4 @@ scoreboard players set #amplifier effectstack 0
 function effectstack:apply/clear/tree
 
 # Trigger
-data modify storage effectstack:trigger effect set from storage effectstack:main player[0]
-function effectstack:triggers/effect_end
+data modify storage effectstack:trigger queue append from storage effectstack:main player[0]

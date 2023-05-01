@@ -63,11 +63,16 @@ execute if entity @s[tag=dmgFirework] if entity @p[tag=dealtDmgFirework,scores={
 
 # Special -> Elytra 16 / 14 Drown / 13 Suffocation / 22 Wither
 execute if entity @s[tag=dmgSpecial] run scoreboard players set @s deathLType 17
-execute if entity @s[tag=dmgSpecial] if entity @s[nbt={Inventory:[{id:"minecraft:elytra",Slot:102b}]}] at @s if block ~ ~ ~ #health:transparent run scoreboard players set @s deathLType 16
 execute if entity @s[tag=dmgSpecial,tag=!forceDeath] at @s align xyz unless block ~ ~1 ~ #health:transparent run scoreboard players set @s deathLType 13
 execute if entity @s[tag=dmgSpecial,tag=forceDeath] at @s align xyz unless block ~ ~1 ~ #health:transparent run scoreboard players set @s deathLType 12
 execute if entity @s[tag=dmgSpecial] at @s if block ~ ~ ~ water run scoreboard players set @s deathLType 14
-execute if entity @s[tag=dmgSpecial] if data entity @s ActiveEffects[{Id:20b}] run scoreboard players set @s deathLType 22
+execute if entity @s[tag=dmgSpecial] if data entity @s ActiveEffects[{Id:20}] run scoreboard players set @s deathLType 22
+
+# Elytra -> 16 Elytra
+execute if entity @s[tag=dmgElytra] run scoreboard players set @s deathLType 16
+
+# Wither -> 22 Wither
+execute if entity @s[tag=dmgWither] run scoreboard players set @s deathLType 22
 
 # Bee -> 21 Bee
 execute if entity @s[tag=dmgBee] run scoreboard players set @s deathLType 21
@@ -80,13 +85,13 @@ execute if entity @s[tag=dmgFangs] if entity @p[tag=dealtDmgFangs,distance=0.001
 execute if entity @s[tag=dmgMagic,tag=!dmgFangs] if entity @p[tag=dealtDmgMagic,distance=0.001..] run tag @p[tag=dealtDmgMagic,distance=0.001..] add dealtDmgAttacker
 execute if entity @s[tag=dmgMagic,tag=!dmgFangs] run scoreboard players set @s deathLType 10
 execute if entity @s[tag=dmgMagic,tag=!dmgFangs] if entity @p[tag=dealtDmgMagic,distance=0.001..] run function health:reason/attacker
-execute if entity @s[tag=dmgMagic,tag=!dmgFangs] unless entity @p[tag=dealtDmgMagic,distance=0.001..] if data entity @s ActiveEffects[{Id:19b}] run scoreboard players set @s deathLType 23
+execute if entity @s[tag=dmgMagic,tag=!dmgFangs] unless entity @p[tag=dealtDmgMagic,distance=0.001..] if data entity @s ActiveEffects[{Id:19}] run scoreboard players set @s deathLType 23
 execute if entity @s[tag=dmgMagic,tag=!dmgFangs] if entity @p[tag=dealtDmgMagic,distance=0.001..] at @s as @p[tag=dealtDmgMagic,distance=0.001..] run function #skills:events/player/damage/deal
-execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBe] at @s if entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run tag @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] add dealtDmgAttacker
-execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBee] at @s if entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run scoreboard players set @s deathLType 11
-execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBee] at @s unless entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run scoreboard players set @s deathLType 0
-execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBee] at @s if entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run function health:reason/attacker
-execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBee] at @s if entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] at @s as @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run function #skills:events/player/damage/deal
+execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBee,tag=!dmgElytra,tag=!dmgWither] at @s if entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run tag @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] add dealtDmgAttacker
+execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBee,tag=!dmgElytra,tag=!dmgWither] at @s if entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run scoreboard players set @s deathLType 11
+execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBee,tag=!dmgElytra,tag=!dmgWither] at @s unless entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run scoreboard players set @s deathLType 0
+execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBee,tag=!dmgElytra,tag=!dmgWither] at @s if entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run function health:reason/attacker
+execute if entity @s[tag=!dmgExplosion,tag=!dmgFire,tag=!dmgProjectile,tag=!dmgLightning,tag=!dmgMagic,tag=!dmgSpecial,tag=!dmgFirework,tag=!dmgBee,tag=!dmgElytra,tag=!dmgWither] at @s if entity @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] at @s as @p[tag=dealtDmg,tag=!dealtDmgProjectile,tag=!dealtDmgMagic,distance=0.001..6] run function #skills:events/player/damage/deal
 
 
 # Depends on Block -> 15 Cactus
@@ -129,3 +134,7 @@ scoreboard players reset @s damageTaken
 # Wither 22
 # Poison 23
 # Fangs 24
+
+# Reconnect 101
+# Creeper Charge 102
+# World Edge 103

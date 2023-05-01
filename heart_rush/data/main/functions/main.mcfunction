@@ -19,7 +19,7 @@ scoreboard players set @a edgeJ 0
 execute as @e[type=armor_stand,tag=blink] run function main:game/blink/main
 
 # Permanent Effect
-effect give @a minecraft:saturation 999999 120 true
+effect give @a minecraft:saturation infinite 120 true
 
 # Reload EGUI
 execute as @a[scores={eOpen=1..}] run scoreboard players operation @s tsEGUI_guiSwitch = @s tsEGUI_guiPage

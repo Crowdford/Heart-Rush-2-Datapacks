@@ -25,7 +25,12 @@
                 },
                 "damage": {
                     "type": {
-                        "is_magic": true
+                        "tags": [
+                            {
+                                "id": "health:is_magic",
+                                "expected": true
+                            }
+                        ]
                     }
                 }
             }

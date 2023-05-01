@@ -1,6 +1,6 @@
 # Trigger
 tag @s add tempOTrigger
-execute at @s as @a if score @s playerID = @e[type=armor_stand,tag=tempOTrigger,limit=1] ObjectID run tag @s add tempOOwner
+execute at @s as @a if score @s playerID = @e[type=block_display,tag=tempOTrigger,limit=1] ObjectID run tag @s add tempOOwner
 tag @s remove tempOTrigger
 execute at @s as @a[tag=tempOOwner] run function #skills:object/main
 

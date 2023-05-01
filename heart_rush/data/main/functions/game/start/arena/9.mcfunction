@@ -13,7 +13,7 @@ setblock 15000 48 14998 minecraft:air
 
 ## Woods of Mimicry
 # Red
-summon armor_stand 15035 58 14996 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[0f,0f],ArmorItems:[{},{},{},{id:"emerald",Count:1,tag:{CustomModelData:2}}]}
+summon item_display 15035 58 14996 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[180f,0f],item:{id:"emerald",Count:1,tag:{CustomModelData:2}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]}}
 summon area_effect_cloud 15035 59.25 14996 {CustomName:'{"translate":"game.shop","color":"red"}',CustomNameVisible:1b,Radius:0.0f,Duration:2147483647,Tags:["game","shopName"]}
 summon area_effect_cloud 15044 63.2 15002 {Radius:0.0f,Duration:2147483647,Tags:["game","red_spawn","spawn"],Rotation:[90f,0f]}
 summon area_effect_cloud 15043 47 14996 {Radius:0.0f,Duration:2147483647,Tags:["game","hole","red_hole"]}
@@ -28,7 +28,7 @@ setblock 15040 59 15003 minecraft:red_wall_banner[facing=west]{Patterns:[]}
 fill 15033 64 14993 15031 62 14990 minecraft:red_concrete replace minecraft:white_concrete
 
 # Blue
-summon armor_stand 14965 58 15004 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[180f,0f],ArmorItems:[{},{},{},{id:"emerald",Count:1,tag:{CustomModelData:3}}]}
+summon item_display 14965 58 15004 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[0f,0f],item:{id:"emerald",Count:1,tag:{CustomModelData:3}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]}}
 summon area_effect_cloud 14965 59.25 15004 {CustomName:'{"translate":"game.shop","color":"blue"}',CustomNameVisible:1b,Radius:0.0f,Duration:2147483647,Tags:["game","shopName"]}
 summon area_effect_cloud 14956 63.2 14998 {Radius:0.0f,Duration:2147483647,Tags:["game","blue_spawn","spawn"],Rotation:[-90f,0f]}
 summon area_effect_cloud 14957 47 15004 {Radius:0.0f,Duration:2147483647,Tags:["game","hole","blue_hole"]}
@@ -43,7 +43,7 @@ setblock 14960 59 14997 minecraft:blue_wall_banner[facing=east]{Patterns:[]}
 fill 14967 64 15007 14969 62 15010 minecraft:blue_concrete replace minecraft:white_concrete
 
 # Green
-summon armor_stand 15004 58 15035 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[90f,0f],ArmorItems:[{},{},{},{id:"emerald",Count:1,tag:{CustomModelData:4}}]}
+summon item_display 15004 58 15035 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[-90f,0f],item:{id:"emerald",Count:1,tag:{CustomModelData:4}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]}}
 summon area_effect_cloud 15004 59.5 15035 {CustomName:'{"translate":"game.shop","color":"green"}',CustomNameVisible:1b,Radius:0.0f,Duration:2147483647,Tags:["game","shopName"]}
 summon area_effect_cloud 14998 63.2 15044 {Radius:0.0f,Duration:2147483647,Tags:["game","green_spawn","spawn"],Rotation:[180f,0f]}
 summon area_effect_cloud 15004 47 15043 {Radius:0.0f,Duration:2147483647,Tags:["game","hole","green_hole"]}
@@ -58,7 +58,7 @@ setblock 14997 59 15040 minecraft:lime_wall_banner[facing=north]{Patterns:[]}
 fill 15007 64 15033 15010 62 15031 minecraft:lime_concrete replace minecraft:white_concrete
 
 # Yellow
-summon armor_stand 14996 58 14965 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[-90f,0f],ArmorItems:[{},{},{},{id:"emerald",Count:1,tag:{CustomModelData:5}}]}
+summon item_display 14996 58 14965 {NoGravity:1b,Invisible:1,Marker:1,Invulnerable:1b,Tags:["ender_chest","game","blink"],Attributes:[{Name:generic.knockback_resistance,Base:10000}],Rotation:[90f,0f],item:{id:"emerald",Count:1,tag:{CustomModelData:5}},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[1f,1f,1f]}}
 summon area_effect_cloud 14996 59.5 14965 {CustomName:'{"translate":"game.shop","color":"yellow"}',CustomNameVisible:1b,Radius:0.0f,Duration:2147483647,Tags:["game","shopName"]}
 summon area_effect_cloud 15002 63.2 14956 {Radius:0.0f,Duration:2147483647,Tags:["game","yellow_spawn","spawn"],Rotation:[0f,0f]}
 summon area_effect_cloud 14996 47 14957 {Radius:0.0f,Duration:2147483647,Tags:["game","hole","yellow_hole"]}

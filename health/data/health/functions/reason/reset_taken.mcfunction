@@ -12,3 +12,5 @@ tag @s remove dmgSpecial
 tag @s remove dmgFirework
 tag @s remove dmgBee
 tag @s remove dmgFangs
+tag @s remove dmgElytra
+tag @s remove dmgWither

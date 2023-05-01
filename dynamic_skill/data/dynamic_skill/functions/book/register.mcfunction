@@ -60,3 +60,6 @@ execute if score id Temp matches 1..42 if entity @p[tag=dynSkillOwner] run tellr
 execute if score id Temp matches 1..42 unless entity @p[tag=dynSkillOwner] run tellraw @a [{"translate":"dynskill.added_skill","with":[{"text":"???","color":"gray"},[{"text":"[","color":"green"},{"storage":"dynamic_skill:main","nbt":"book_skill.name","interpret":true,"bold":true,"hoverEvent":{"action":"show_text","contents":["",{"storage":"dynamic_skill:main","nbt":"book_skill.name","interpret":true,"color":"gray","bold":true},"\n",{"storage":"dynamic_skill:main","nbt":"book_skill.comb_desc","interpret":true},[{"text":"minecraft:","color":"dark_gray"},{"storage":"dynamic_skill:main","nbt":"book_skill.item"}]]}},"]"]]}]
 execute unless score id Temp matches 1..42 run tellraw @a {"translate":"dynskill.cant_add","color":"red"}
  tag @a remove dynSkillOwner
+ 
+ # fix skill ids
+function skills:fix_skills

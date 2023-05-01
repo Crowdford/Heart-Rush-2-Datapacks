@@ -40,7 +40,7 @@ execute as @e[tag=middle] at @s as @a[gamemode=adventure,distance=100..] unless 
 execute as @e[tag=middle] at @s as @a[gamemode=spectator,distance=100..,team=spectator] unless score pause Stats matches 1.. run function main:game/spawn
 
 # Forcefield
-execute as @a[nbt={ActiveEffects:[{Id:32b}]},gamemode=adventure] run function main:game/item/forcefield
+execute as @a[nbt={ActiveEffects:[{Id:32}]},gamemode=adventure] run function main:game/item/forcefield
 
 
 # Skill Triggers
@@ -61,4 +61,4 @@ scoreboard players reset * useBow
 scoreboard players reset * jump
 scoreboard players set @a sneakTime 0
 execute as @a[gamemode=adventure] run function main:game/steady
-execute as @e[type=armor_stand,tag=skillObject] run function main:game/object
+execute as @e[type=block_display,tag=skillObject] run function main:game/object

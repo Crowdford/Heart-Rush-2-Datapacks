@@ -1,5 +1,5 @@
 # Jump Boost
-effect give @a[scores={lobbyArmor=1}] jump_boost 4 3 true
+effect give @a[scores={lobbyArmor=1}] jump_boost infinite 3 true
 execute as @a[scores={lobbyArmor=1}] at @s run particle happy_villager ~ ~1 ~ 0.3 0.5 0.3 0.2 1 normal @a[distance=0.01..]
 execute as @a[scores={lobbyArmor=1}] at @s run particle happy_villager ~ ~ ~ 0.3 0 0.3 0.2 1 normal @s
 
@@ -8,7 +8,7 @@ execute as @a[scores={lobbyArmor=2}] at @s run particle enchanted_hit ~ ~1 ~ 0.3
 execute as @a[scores={lobbyArmor=2}] at @s run particle enchanted_hit ~ ~ ~ 0.3 0 0.3 0.2 1 normal @s
 
 # Fire
-effect give @a[scores={lobbyArmor=3}] fire_resistance 4 120 true
+effect give @a[scores={lobbyArmor=3}] fire_resistance infinite 120 true
 execute as @a[scores={lobbyArmor=3}] at @s run particle lava ~ ~1 ~ 0.3 0.5 0.3 0.05 1 normal @a[distance=0.01..]
 execute as @a[scores={lobbyArmor=3}] at @s run particle flame ~ ~ ~ 0.3 0 0.3 0.05 1 normal @s
 

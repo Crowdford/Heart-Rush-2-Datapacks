@@ -106,6 +106,14 @@ execute unless score temp3 dynamic_skill matches 1 unless score temp3 dynamic_sk
 execute if score temp3 dynamic_skill matches 1..2 run data modify storage dynamic_skill:main trigger_data_translations[8] set value '{"translate":"dynskill.triggers.location5.player"}'
 execute if score temp3 dynamic_skill matches 1..2 run data modify storage dynamic_skill:main trigger_data_translations[9] set value '{"translate":"dynskill.triggers.location6.player"}'
 execute unless score temp3 dynamic_skill matches 1 unless score temp3 dynamic_skill matches 3 run data modify storage dynamic_skill:main trigger_data_translations[10] set value '{"translate":"dynskill.triggers.identity4.player"}'
+# the previous one can cause "tps them to themself" when there should be two separate thems for triggers that arent run on you
+data modify storage dynamic_skill:main temp set from storage dynamic_skill:main trigger_data_translations[0] 
+execute if data storage dynamic_skill:main trigger{id:13} if score temp3 dynamic_skill matches 1 run data modify storage dynamic_skill:main trigger_data_translations[0] set value '{"translate":"dynskill.triggers.location1.that"}'
+execute if data storage dynamic_skill:main trigger{id:45} if score temp3 dynamic_skill matches 1 run data modify storage dynamic_skill:main trigger_data_translations[0] set value '{"translate":"dynskill.triggers.location1.that"}'
+execute if data storage dynamic_skill:main trigger{id:13} unless score temp3 dynamic_skill matches 1 unless score temp3 dynamic_skill matches 3 run data modify storage dynamic_skill:main trigger_data_translations[10] set value '{"translate":"dynskill.triggers.identity4.that"}'
+execute if data storage dynamic_skill:main trigger{id:45} unless score temp3 dynamic_skill matches 1 unless score temp3 dynamic_skill matches 3 run data modify storage dynamic_skill:main trigger_data_translations[10] set value '{"translate":"dynskill.triggers.identity4.that"}'
+execute if data storage dynamic_skill:main trigger{id:13} if data storage dynamic_skill:main {temp:'{"translate":"dynskill.triggers.location1.player"}'} run data modify storage dynamic_skill:main trigger_data_translations[0] set value '{"translate":"dynskill.triggers.location1.player_alt"}'
+execute if data storage dynamic_skill:main trigger{id:45} if data storage dynamic_skill:main {temp:'{"translate":"dynskill.triggers.location1.player"}'} run data modify storage dynamic_skill:main trigger_data_translations[0] set value '{"translate":"dynskill.triggers.location1.player_alt"}'
 
 # if context uses a 'self' but location and identity are different remove the 'self'
 data modify storage dynamic_skill:main temp set from storage dynamic_skill:main trigger_data_translations[0] 

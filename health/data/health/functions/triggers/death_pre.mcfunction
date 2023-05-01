@@ -4,8 +4,6 @@ execute at @s as @a run function #skills:events/generic/death
 gamemode spectator @s
 
 tag @s add healthKilled
-kill @e[type=area_effect_cloud,tag=tempDeadLocation]
-execute at @s run summon area_effect_cloud ~ ~ ~ {Duration:0,Radius:0.0f,Tags:["tempDeadLocation","game"]}
 
 # Set Death Screen Location
 execute at @s unless entity @e[tag=hole,distance=..15] positioned ~ ~20 ~ facing entity @e[tag=middle,limit=1,sort=nearest] feet run tp @s ~ ~ ~ ~ ~

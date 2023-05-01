@@ -1,5 +1,5 @@
-data modify storage dynamic_skill:main char set from storage universal:strings io[0]
-data remove storage universal:strings io[0]
+data modify storage dynamic_skill:main char set from storage string:new out[0]
+data remove storage string:new out[0]
 data modify storage dynamic_skill:main bits set value []
 execute if data storage dynamic_skill:main {char:"A"} run data modify storage dynamic_skill:main bits set value [0b,0b,0b,0b,0b,0b]
 execute if data storage dynamic_skill:main {char:"B"} run data modify storage dynamic_skill:main bits set value [0b,0b,0b,0b,0b,1b]

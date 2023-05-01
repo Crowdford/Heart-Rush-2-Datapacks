@@ -1,6 +1,6 @@
 # Permanent Effects
-effect give @a minecraft:resistance 999999 120 true
-effect give @a minecraft:weakness 999999 120 true
+effect give @a minecraft:resistance infinite 120 true
+effect give @a minecraft:weakness infinite 120 true
 
 # Functions
 execute unless score timer Stats matches 1.. run function main:lobby/join
@@ -14,10 +14,10 @@ execute as @a[gamemode=adventure] at @s positioned ~ 80 ~ if entity @s[distance=
 execute as @a[gamemode=adventure] at @s positioned ~ 80 ~ if entity @s[distance=..10] positioned 10011 102 10000 if entity @s[distance=..5] run tp @s 9960 106.5 10001 90 0
 
 # Fast Bridge Travel
-execute as @a at @s if block ~ 0 ~ barrier run effect give @s speed 12 7 true
+execute as @a at @s if block ~ 0 ~ barrier run effect give @s speed infinite 7 true
 execute as @a at @s unless block ~ 0 ~ barrier run effect clear @s speed 
-execute as @a at @s unless block ~ 0 ~ barrier unless entity @s[scores={lobbyArmor=2}] run effect give @s speed 12 1 true
-execute as @a at @s unless block ~ 0 ~ barrier if entity @s[scores={lobbyArmor=2}] run effect give @s speed 12 5 true
+execute as @a at @s unless block ~ 0 ~ barrier unless entity @s[scores={lobbyArmor=2}] run effect give @s speed infinite 1 true
+execute as @a at @s unless block ~ 0 ~ barrier if entity @s[scores={lobbyArmor=2}] run effect give @s speed infinite 5 true
 
 # GUI Fix
 execute as @a[scores={tsEGUI_guiPage=11..}] positioned 9868 112 9986 unless entity @s[distance=..10] run scoreboard players set @s tsEGUI_guiSwitch 1
@@ -61,9 +61,9 @@ scoreboard players set gold_color custom_ui 1
 execute as @a[gamemode=adventure] positioned 9866 111 10001 unless entity @s[distance=..20] run function main:lobby/ui
 
 # tutorial translations
-execute as @a at @s anchored eyes facing entity @e[type=armor_stand,tag=tut1,distance=..10,limit=6] feet anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.5] run title @s actionbar [{"translate":"lobby.tutorial.1.subtitle","color":"white"}]
-execute as @a at @s anchored eyes facing entity @e[type=armor_stand,tag=tut2,distance=..10,limit=2] feet anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.5] run title @s actionbar [{"translate":"lobby.tutorial.2.subtitle","color":"white"}]
-execute as @a at @s anchored eyes facing entity @e[type=armor_stand,tag=tut3,distance=..10,limit=2] feet anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.5] run title @s actionbar [{"translate":"lobby.tutorial.3.subtitle","color":"white"}]
+execute as @a at @s anchored eyes facing entity @e[type=item_display,tag=tut1,distance=..10,limit=6] feet anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.5] run title @s actionbar [{"translate":"lobby.tutorial.1.subtitle","color":"white"}]
+execute as @a at @s anchored eyes facing entity @e[type=item_display,tag=tut2,distance=..10,limit=2] feet anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.5] run title @s actionbar [{"translate":"lobby.tutorial.2.subtitle","color":"white"}]
+execute as @a at @s anchored eyes facing entity @e[type=item_display,tag=tut3,distance=..10,limit=2] feet anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.5] run title @s actionbar [{"translate":"lobby.tutorial.3.subtitle","color":"white"}]
 
 # Writable Book
 execute as @e[type=item,nbt={Item:{id:"minecraft:written_book"}}] at @s if data entity @s Thrower run kill @s

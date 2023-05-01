@@ -10,10 +10,11 @@ execute store result score $id SkillParams run data get storage dynamic_skill:ma
 execute if score $id SkillParams matches 0 store result score $id SkillParams run data get storage dynamic_skill:main trigger.effects[0].skillId
 execute if score $id SkillParams matches 0 store result score $id SkillParams run data get storage dynamic_skill:main trigger.condition.skillId
 
-#tellraw @a ["ef: ", "$1 ",{"score":{"name":"$1","objective":"SkillParams"}}, " $2 ",{"score":{"name":"$2","objective":"SkillParams"}}, " $3 ",{"score":{"name":"$3","objective":"SkillParams"}}]
+#tellraw @a ["ef: ", "$1 ",{"score":{"name":"$1","objective":"SkillParams"}}, " $2 ",{"score":{"name":"$2","objective":"SkillParams"}}, " $3 ",{"score":{"name":"$3","objective":"SkillParams"}}, " $4 ",{"score":{"name":"$4","objective":"SkillParams"}}]
 
 # get id
 execute store result score effect dynamic_skill run data get storage dynamic_skill:main trigger.effects[0].id
+#tellraw @a ["ef: ", {"score":{"name":"effect","objective":"dynamic_skill"}}]
 
 execute if score effect dynamic_skill matches 1 run function skills:effects/give_item
 execute if score effect dynamic_skill matches 3 run function skills:effects/explosion
@@ -66,6 +67,9 @@ execute if score effect dynamic_skill matches 44 run function dynamic_skill:exec
 execute if score effect dynamic_skill matches 101 run function dynamic_skill:execute/limited/effect/uneffect
 execute if score effect dynamic_skill matches 102 run function dynamic_skill:execute/limited/effect/unselect
 execute if score effect dynamic_skill matches 103 run function dynamic_skill:execute/limited/effect/instant_trident_return
+
+
+#tellraw @a ["EF DONE"]
 
 ## load from stack
 data modify storage dynamic_skill:main execute set from storage dynamic_skill:main stack3[-1]

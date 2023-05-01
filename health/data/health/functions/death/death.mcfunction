@@ -1,6 +1,14 @@
 # Reset
 scoreboard players set @s respawn 0
 
+# Store Location
+kill @e[type=area_effect_cloud,tag=tempDeadLocation]
+execute at @s run summon area_effect_cloud ~ ~ ~ {Duration:0,Radius:0.0f,Tags:["tempDeadLocation","game"]}
+
+# GET REASON
+# IMPORTANT: THIS ALSO RUNS THE on kill TRIGGER
+function health:reason/get_reason
+
 # Trigger
 gamemode creative @s
 function health:triggers/death_pre
@@ -32,7 +40,6 @@ spectate @e[type=armor_stand,tag=deadMarkerNew,limit=1] @s
 tag @e[type=armor_stand,tag=deadMarkerNew,limit=1] remove deadMarkerNew
 
 # Death Msg 
-function health:reason/get_reason
 tellraw @a [{"text":" |  ","color":"gray"},{"nbt":"CustomName","entity":"@e[tag=deathMsg,limit=1]","interpret":true}]
 function health:death/bossbars
 kill @e[tag=deathMsg]

@@ -46,4 +46,6 @@ execute if score int dynamic_skill matches 7 run data modify storage dynamic_ski
 scoreboard players set digits dynamic_skill 8
 function dynamic_skill:internal/util/decode_binary
 
+execute if score int dynamic_skill matches 0 run scoreboard players set effect dynamic_skill 200
+
 function dynamic_skill:internal/effect/write_arg_score

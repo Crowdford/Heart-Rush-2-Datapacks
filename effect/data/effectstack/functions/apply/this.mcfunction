@@ -1,4 +1,5 @@
 # Check old effects 
+data modify storage effectstack:trigger queue set value []
 data modify storage effectstack:main copy set value []
 execute if data storage effectstack:main player[0] run function effectstack:apply/remove
 
@@ -12,3 +13,6 @@ execute store result score #total effectstack run data get storage effectstack:m
 # Apply stacked effects
 function effectstack:apply/get_this
 execute if data storage effectstack:main player[0] if data storage effectstack:main temp[0] run function effectstack:apply/recursive
+
+# handle effect end triggers
+execute unless entity @s[tag=dontUneffectTrigger3] if data storage effectstack:trigger queue[0] run function effectstack:internal/effect_end_process_queue

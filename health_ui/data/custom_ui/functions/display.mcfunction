@@ -51,6 +51,12 @@ execute if score armor_color custom_ui matches 1 run data modify storage custom_
 execute if score armor_color custom_ui matches 2 run data modify storage custom_ui:main elements.armor set value '{"storage":"custom_ui:main","nbt":"generate.armor","interpret":true,"font":"health:armor/invisibility"}'
 execute if score armor_color custom_ui matches 3 run data modify storage custom_ui:main elements.armor set value '{"storage":"custom_ui:main","nbt":"generate.armor","interpret":true,"font":"health:armor/vulnerability"}'
 
+# elytra
+execute if score elytra custom_ui matches 0 run data modify storage custom_ui:main elements.elytra set value '""'
+execute if score elytra custom_ui matches 1 run data modify storage custom_ui:main elements.elytra set value '{"text":"0b<","font":"health:armor/normal"}'
+execute if score elytra custom_ui matches 2 run data modify storage custom_ui:main elements.elytra set value '{"text":"1b<","font":"health:armor/normal"}'
+execute if score elytra custom_ui matches 3 run data modify storage custom_ui:main elements.elytra set value '{"text":"2b<","font":"health:armor/normal"}'
+
 # gold
 data modify storage custom_ui:main elements.gold set value '{"text":"gb","font":"health:gold"}'
 
@@ -68,12 +74,12 @@ execute if score gold_color custom_ui matches 2 run data modify storage custom_u
 
 # actionbar 
 execute if score msg custom_ui matches 0 run data modify storage custom_ui:main elements.msg set value '""'
-execute if score msg custom_ui matches 1 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.red.space","font":"space_bold"},{"translate":"lobby.team.red","color":"red","bold":"true"}]'
-execute if score msg custom_ui matches 2 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.blue.space","font":"space_bold"},{"translate":"lobby.team.blue","color":"blue","bold":"true"}]'
-execute if score msg custom_ui matches 3 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.green.space","font":"space_bold"},{"translate":"lobby.team.green","color":"green","bold":"true"}]'
-execute if score msg custom_ui matches 4 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.yellow.space","font":"space_bold"},{"translate":"lobby.team.yellow","color":"yellow","bold":"true"}]'
-execute if score msg custom_ui matches 5 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.leave.space","font":"space_bold"},{"translate":"lobby.team.leave","color":"gray","bold":"true"}]'
-execute if score msg custom_ui matches 6 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.random2.space","font":"space_bold"},{"translate":"lobby.team.random2","color":"dark_purple","bold":"true"}]'
+execute if score msg custom_ui matches 1 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.red.space","font":"space","bold":true},{"translate":"lobby.team.red","color":"red","bold":"true"}]'
+execute if score msg custom_ui matches 2 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.blue.space","font":"space","bold":true},{"translate":"lobby.team.blue","color":"blue","bold":"true"}]'
+execute if score msg custom_ui matches 3 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.green.space","font":"space","bold":true},{"translate":"lobby.team.green","color":"green","bold":"true"}]'
+execute if score msg custom_ui matches 4 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.yellow.space","font":"space","bold":true},{"translate":"lobby.team.yellow","color":"yellow","bold":"true"}]'
+execute if score msg custom_ui matches 5 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.leave.space","font":"space","bold":true},{"translate":"lobby.team.leave","color":"gray","bold":"true"}]'
+execute if score msg custom_ui matches 6 run data modify storage custom_ui:main elements.msg set value '["",{"translate":"lobby.team.random2.space","font":"space","bold":true},{"translate":"lobby.team.random2","color":"dark_purple","bold":"true"}]'
 
 # display
-title @s actionbar ["",{"storage":"custom_ui:main","nbt":"elements.empty_hearts","interpret":true},{"storage":"custom_ui:main","nbt":"elements.flash_hearts","interpret":true},{"storage":"custom_ui:main","nbt":"elements.hearts","interpret":true},{"translate":"space.-14"},{"storage":"custom_ui:main","nbt":"elements.gold","interpret":true},{"translate":"space.-2"},{"storage":"custom_ui:main","nbt":"elements.armor","interpret":true},{"translate":"space.2"},{"storage":"custom_ui:main","nbt":"elements.gold_numbers","interpret":true},{"storage":"custom_ui:main","nbt":"elements.msg","interpret":true}]
+title @s actionbar [{"text":"","color":"#4e5c24"},{"storage":"custom_ui:main","nbt":"elements.empty_hearts","interpret":true},{"storage":"custom_ui:main","nbt":"elements.flash_hearts","interpret":true},{"storage":"custom_ui:main","nbt":"elements.hearts","interpret":true},{"translate":"space.-14"},{"storage":"custom_ui:main","nbt":"elements.gold","interpret":true},{"translate":"space.-2"},{"storage":"custom_ui:main","nbt":"elements.armor","interpret":true},{"translate":"space.2"},{"storage":"custom_ui:main","nbt":"elements.elytra","interpret":true},{"storage":"custom_ui:main","nbt":"elements.gold_numbers","interpret":true},{"storage":"custom_ui:main","nbt":"elements.msg","interpret":true}]

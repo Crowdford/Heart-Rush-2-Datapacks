@@ -29,7 +29,14 @@ scoreboard players operation met13x SkillsCondition = met13 SkillsCondition
 scoreboard players operation met14x SkillsCondition = met14 SkillsCondition
 scoreboard players operation met15x SkillsCondition = met15 SkillsCondition
 
+#tellraw @a ["effect apply start",{"score":{"name":"id","objective":"effectstack"}}]
+execute if score duration effectstack matches 1.. run tag @s add dontUneffectTrigger3
+data modify storage effectstack:trigger stack append from storage effectstack:trigger effect
 function effectstack:effect
+data modify storage effectstack:trigger effect set from storage effectstack:trigger stack[-1]
+data remove storage effectstack:trigger stack[-1]
+tag @s remove dontUneffectTrigger3
+#tellraw @a ["effect apply end",{"score":{"name":"id","objective":"effectstack"}},"\n"]
 
 scoreboard players operation met0 SkillsCondition = met0x SkillsCondition
 scoreboard players operation met1 SkillsCondition = met1x SkillsCondition

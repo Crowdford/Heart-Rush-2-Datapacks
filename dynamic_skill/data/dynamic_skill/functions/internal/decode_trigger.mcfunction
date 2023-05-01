@@ -24,6 +24,8 @@ execute unless data storage dynamic_skill:main trigger{id:-1} run data modify st
 execute unless data storage dynamic_skill:main trigger{id:-1} run function dynamic_skill:internal/decode_effect_list
 execute unless data storage dynamic_skill:main trigger{id:-1} run data modify storage dynamic_skill:main trigger.effects append from storage dynamic_skill:main effect_list[]
 execute unless data storage dynamic_skill:main trigger{id:-1} if data storage dynamic_skill:main translations[0] run data modify storage dynamic_skill:main skill.description append from storage dynamic_skill:main translations[]
+# remove trigger translation if no effects
+execute unless data storage dynamic_skill:main trigger{id:-1} unless data storage dynamic_skill:main translations[0] run data remove storage dynamic_skill:main skill.description[-1]
 
 ## specific extra effects
 # remove object effect (object trigger trigger & object trigger type condition)

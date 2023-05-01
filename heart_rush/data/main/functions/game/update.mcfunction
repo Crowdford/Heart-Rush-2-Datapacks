@@ -33,7 +33,7 @@ scoreboard players set amplifier effectstack 0
 scoreboard players set duration effectstack 4840
 scoreboard players set sid effectstack 2
 tag @a[gamemode=adventure] add dontEffectTrigger
-execute as @a[gamemode=adventure,tag=!noNatRegen] unless data entity @s ActiveEffects[{Id:10b}] run function effectstack:effect
+execute as @a[gamemode=adventure,tag=!noNatRegen] unless data entity @s ActiveEffects[{Id:10}] run function effectstack:effect
 tag @a[gamemode=adventure] remove dontEffectTrigger
 
 

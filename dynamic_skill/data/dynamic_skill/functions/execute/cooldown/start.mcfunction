@@ -4,8 +4,9 @@ function dynamic_skill:execute/cooldown/load
 
 # start cooldown
 execute if score @s dynSkill_st matches 1.. run scoreboard players set @s dynSkill_st 1
-execute if score @s dynSkill_st matches 1 run function dynamic_skill:execute/cooldown/main
+execute if score @s dynSkill_st matches 1 run function dynamic_skill:execute/cooldown/start_reset
 scoreboard players operation @s dynSkill_st = $1 SkillParams
+scoreboard players add @s dynSkill_st 1
 scoreboard players operation @s dynSkill_sm = $1 SkillParams
 function skills:cooldown/get_id
 scoreboard players operation @s dynSkill_si = $id SkillCooldown

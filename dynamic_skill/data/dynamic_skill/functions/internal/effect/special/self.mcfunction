@@ -13,16 +13,9 @@ data modify storage dynamic_skill:main stack[-4].value append from block 0 1 0 T
 
 # provide pseudo trigger location data
 # provide pseudo trigger location data
-data modify storage dynamic_skill:main trigger_data_translations[0] set value '{"translate":"dynskill.triggers.location1.self"}'
-data modify storage dynamic_skill:main trigger_data_translations[1] set value '{"translate":"dynskill.triggers.location2.self"}'
-data modify storage dynamic_skill:main trigger_data_translations[2] set value '{"translate":"dynskill.triggers.location3.self"}'
-data modify storage dynamic_skill:main trigger_data_translations[3] set value '{"translate":"dynskill.triggers.location4.self"}'
-data modify storage dynamic_skill:main trigger_data_translations[4] set value '{"translate":"dynskill.triggers.location2.self"}'
-data modify storage dynamic_skill:main trigger_data_translations[5] set value '{"translate":"dynskill.triggers.identity1.self"}'
-data modify storage dynamic_skill:main trigger_data_translations[6] set value '{"translate":"dynskill.triggers.identity2.self"}'
-data modify storage dynamic_skill:main trigger_data_translations[7] set value '{"translate":"dynskill.triggers.identity3.self"}'
-data modify storage dynamic_skill:main trigger_data_translations[8] set value '{"translate":"dynskill.triggers.location5.self"}'
-data modify storage dynamic_skill:main trigger_data_translations[9] set value '{"translate":"dynskill.triggers.location6.self"}'
+function dynamic_skill:internal/effect/special/self_context_self
+execute if data storage dynamic_skill:main trigger{id:13} run function dynamic_skill:internal/effect/special/self_context_them
+execute if data storage dynamic_skill:main trigger{id:45} run function dynamic_skill:internal/effect/special/self_context_them
 
 # if context uses a 'self' but location and identity are different remove the 'self'
 data modify storage dynamic_skill:main temp set from storage dynamic_skill:main trigger_data_translations[0] 

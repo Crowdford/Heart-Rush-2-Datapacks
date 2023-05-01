@@ -70,6 +70,8 @@ scoreboard players reset * eqrPath
 scoreboard players reset * eqrPath2
 
 # bossbar 
+bossbar set minecraft:1 players
+bossbar set minecraft:2 players
 bossbar set minecraft:3 players
 
 # restore random

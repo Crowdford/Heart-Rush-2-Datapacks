@@ -27,7 +27,7 @@ execute as @a[gamemode=spectator,team=spectator] at @s unless entity @a[gamemode
 execute if score gold options matches 1 run scoreboard players add @a[gamemode=adventure] goldtimer 4
 execute if score gold options matches 2 run scoreboard players add @a[gamemode=adventure] goldtimer 8
 execute if score gold options matches 3 run scoreboard players add @a[gamemode=adventure] goldtimer 16
-execute as @a[gamemode=adventure] if data entity @s ActiveEffects[{Id:17b}] run scoreboard players set @s goldtimer -1
+execute as @a[gamemode=adventure] if data entity @s ActiveEffects[{Id:17}] run scoreboard players set @s goldtimer -1
 scoreboard players add @a gold 0
 scoreboard players add @a[scores={goldtimer=80..,gold=..14998}] gold 2
 scoreboard players remove @a[scores={goldtimer=80..}] goldtimer 80
@@ -76,9 +76,9 @@ execute as @a[gamemode=adventure] run scoreboard players operation @s disHealth 
 
 
 # effect arrows 
-execute as @a[nbt={ActiveEffects:[{Id:12b}]}] run function main:game/arrow/weakness
-execute as @a[nbt={ActiveEffects:[{Id:13b}]}] run function main:game/arrow/slowness
-execute as @a[nbt={ActiveEffects:[{Id:29b}]}] run function main:game/arrow/poison
+execute as @a[nbt={ActiveEffects:[{Id:12}]}] run function main:game/arrow/weakness
+execute as @a[nbt={ActiveEffects:[{Id:13}]}] run function main:game/arrow/slowness
+execute as @a[nbt={ActiveEffects:[{Id:29}]}] run function main:game/arrow/poison
 
 # void charm
 execute as @a[scores={void_charm=1..}] at @s run function main:game/item/void_charm_aura

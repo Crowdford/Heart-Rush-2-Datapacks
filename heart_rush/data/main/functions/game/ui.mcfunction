@@ -12,12 +12,12 @@ execute if entity @s[scores={eqaLevel=5..}] unless score @s eqs matches 0 run sc
 scoreboard players set armor_color custom_ui 1
 scoreboard players set health_color custom_ui 1
 scoreboard players set health_backcolor custom_ui 1
-execute if data entity @s ActiveEffects[{Id:14b}] run scoreboard players set armor_color custom_ui 2
-execute if data entity @s ActiveEffects[{Id:27b}] run scoreboard players set armor_color custom_ui 3
-execute if data entity @s ActiveEffects[{Id:19b}] run scoreboard players set health_color custom_ui 2
-execute if data entity @s ActiveEffects[{Id:20b}] run scoreboard players set health_color custom_ui 3
-execute if data entity @s ActiveEffects[{Id:27b}] run scoreboard players set health_color custom_ui 4
-execute if data entity @s ActiveEffects[{Id:26b}] run scoreboard players set health_backcolor custom_ui 2
+execute if data entity @s ActiveEffects[{Id:14}] run scoreboard players set armor_color custom_ui 2
+execute if data entity @s ActiveEffects[{Id:27}] run scoreboard players set armor_color custom_ui 3
+execute if data entity @s ActiveEffects[{Id:19}] run scoreboard players set health_color custom_ui 2
+execute if data entity @s ActiveEffects[{Id:20}] run scoreboard players set health_color custom_ui 3
+execute if data entity @s ActiveEffects[{Id:27}] run scoreboard players set health_color custom_ui 4
+execute if data entity @s ActiveEffects[{Id:26}] run scoreboard players set health_backcolor custom_ui 2
 
 scoreboard players set gold_color custom_ui 1
 execute if score @s goldtimer matches -1 run scoreboard players set gold_color custom_ui 2
@@ -42,12 +42,17 @@ execute if score @s healthFlash matches 1.. run scoreboard players set up custom
 
 # shake
 scoreboard players set armor_up custom_ui 0
-execute if data entity @s ActiveEffects[{Id:27b}] run scoreboard players operation armor custom_ui = @s armorSaved
-execute if data entity @s ActiveEffects[{Id:27b}] run function main:game/ui_shake
+execute if data entity @s ActiveEffects[{Id:27}] run scoreboard players operation armor custom_ui = @s armorSaved
+execute if data entity @s ActiveEffects[{Id:27}] run function main:game/ui_shake
 
 # Gold
 scoreboard players add @s gold 0
 scoreboard players operation gold custom_ui = @s gold
+
+# Elytra
+scoreboard players set elytra custom_ui 0
+execute if score @s elytra matches 40.. run scoreboard players set elytra custom_ui 1
+execute if score @s elytra matches 1..39 run function main:game/ui_elytra
 
 # Display Bar
 scoreboard players set msg custom_ui 0

@@ -11,3 +11,5 @@ execute as @s[team=lobby_fire] run function main:lobby/team
 execute as @s[team=lobby_witch] run function main:lobby/team
 effect clear @s glowing
 effect clear @s invisibility
+effect clear @s jump_boost
+effect clear @s fire_resistance

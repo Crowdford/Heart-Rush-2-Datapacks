@@ -20,6 +20,7 @@ execute if score temp dynamic_skill matches 23 run data modify storage dynamic_s
 execute if score temp dynamic_skill matches 24 run data modify storage dynamic_skill:main args_text append value '{"translate":"equipment.item.jump_crystal"}'
 execute if score temp dynamic_skill matches 25 run data modify storage dynamic_skill:main args_text append value '{"translate":"equipment.item.speed_crystal"}'
 execute if score temp dynamic_skill matches 26 run data modify storage dynamic_skill:main args_text append value '{"translate":"equipment.item.persistence_crystal"}'
+execute if score temp dynamic_skill matches 27 run data modify storage dynamic_skill:main args_text append value '{"translate":"equipment.item.forcefield"}'
 execute if score temp dynamic_skill matches 30 run data modify storage dynamic_skill:main args_text append value '{"translate":"equipment.crossbow"}'
 execute if score temp dynamic_skill matches 31 run data modify storage dynamic_skill:main args_text append value '{"translate":"equipment.firework"}'
 execute if score temp dynamic_skill matches 32 run data modify storage dynamic_skill:main args_text append value '{"translate":"equipment.milk"}'

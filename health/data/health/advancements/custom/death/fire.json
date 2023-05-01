@@ -22,7 +22,12 @@
             "conditions": {
                 "damage": {
                     "type": {
-                        "is_fire": true
+                        "tags": [
+                            {
+                                "id": "minecraft:is_fire",
+                                "expected": true
+                            }
+                        ]
                     }
                 }
             }

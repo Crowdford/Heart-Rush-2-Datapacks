@@ -3,6 +3,9 @@
 tag @s add temp
 data modify block 0 1 0 Text1 set value '[{"translate":"death.attack.generic","with":[{"selector":"@p[tag=temp]"}]}]'
 tag @s remove temp
+#tellraw @a ["Last Attacker: ",{"score":{"name":"@s","objective":"deathLPlayerID"}}]
+#tellraw @a ["Last PreAttacker: ",{"score":{"name":"@s","objective":"deathPPlayerID"}}]
+#tellraw @a ["Last Damage: ",{"score":{"name":"@s","objective":"deathLPlayerTime"}}]
 # if last damage is self, reset attacker
 execute if score @s deathLPlayerID = @s playerID run scoreboard players set @s deathLPlayerID 0
 # if pre last damage is self, reset pre attacker

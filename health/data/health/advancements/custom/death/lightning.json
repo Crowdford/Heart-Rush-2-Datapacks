@@ -22,7 +22,13 @@
             "conditions": {
                 "damage": {
                     "type": {
-                        "is_lightning": true
+                        "is_lightning": true,
+                        "tags": [
+                            {
+                                "id": "minecraft:is_lightning",
+                                "expected": true
+                            }
+                        ]
                     }
                 }
             }

@@ -8,7 +8,7 @@ tag @a remove healthAssist
 gamemode adventure @s
 execute at @s run function #skills:events/player/respawn/start
 gamemode spectator @s
-bossbar set minecraft:3 players @a[nbt={ActiveEffects:[{Id:31b}]}]
+bossbar set minecraft:3 players @a[nbt={ActiveEffects:[{Id:31}]}]
 
 # Defenseless Mode
 execute if score timer Stats matches 14000.. if score defenseless options matches 1 run scoreboard players add @s respawn 80

@@ -1,17 +1,24 @@
 gamerule sendCommandFeedback false
 
-#tellraw @a {"nbt":"out.time","storage":"s_str:io"}
+#converts base64 char array into ascii char array
+function base64:callio
+
+#parses output
+function parser:callio
+
+#sets up to do unix conversion
+data modify storage rev_conv:main in set from storage string:new out[{Name:[t,i,m,e,s,t,a,m,p]}].Value.num
+
+data remove storage rev_conv:main in[-1]
+data remove storage rev_conv:main in[-1]
+data remove storage rev_conv:main in[-1]
+
+scoreboard players set base= rev_conv.num 10
+function rev_conv:call
+
+#tellraw @a {"nbt":"out","storage":"string:new"}
 scoreboard objectives add unix dummy
 scoreboard players set time unix 0
-scoreboard players set 10 unix 10
-scoreboard players set 86400 unix 86400
-scoreboard players set 96 unix 96
-scoreboard players set digit unix 0
-data remove storage s_str:io out.time[0]
-data remove storage s_str:io out.time[-1]
-data remove storage s_str:io out.time[-1]
-data remove storage s_str:io out.time[-1]
-execute if data storage s_str:io out.time[0] run function application_cape:internal_fake/to_int
 
 scoreboard players remove time unix 649368800
 scoreboard players operation time unix /= 86400 unix
@@ -21,6 +28,6 @@ data modify storage sotd:fake storage set value ["zakcO7IAfqQP3QB0Ing","3zyRiN+M
 
 execute if score time unix matches 1.. run function application_cape:internal_fake/scroll
 
-data modify storage universal:strings io set value {string:"",callback:{command:"function application_cape:internal_fake/callback_2",id:1}}
-data modify storage universal:strings io.string set from storage sotd:fake storage[0]
-function string:callio
+data modify storage string:new in set from storage sotd:fake storage[0]
+function string:parse
+function application_cape:internal_fake/callback_2

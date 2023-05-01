@@ -11,7 +11,7 @@ execute if score $1 SkillParams matches 07 run data modify entity @e[tag=new_ent
 execute if score $1 SkillParams matches 08 run summon cave_spider ~ ~ ~ {Tags:["new_entity_dyn"]}
 execute if score $1 SkillParams matches 09 run summon creeper ~ ~ ~ {Tags:["new_entity_dyn"]}
 execute if score $1 SkillParams matches 10 run summon pufferfish ~ ~ ~ {Tags:["new_entity_dyn"]}
-execute if score $1 SkillParams matches 11 run summon phantom ~ ~ ~ {Tags:["new_entity_dyn"],ActiveEffects:[{Id:12b,Amplifier:120b,Duration:999999}],HasVisualFire:0}
+execute if score $1 SkillParams matches 11 run summon phantom ~ ~ ~ {Tags:["new_entity_dyn"],ActiveEffects:[{Id:12,Amplifier:120b,Duration:999999}],HasVisualFire:0}
 execute if score $1 SkillParams matches 12 run summon piglin_brute ~ ~ ~ {Tags:["new_entity_dyn"],HandItems:[{id:"golden_axe",Count:1}],IsImmuneToZombification:1b}
 execute if score $1 SkillParams matches 13 run summon ravager ~ ~ ~ {Tags:["new_entity_dyn"]}
 execute if score $1 SkillParams matches 14 run summon shulker ~ ~ ~ {Tags:["new_entity_dyn"]}
