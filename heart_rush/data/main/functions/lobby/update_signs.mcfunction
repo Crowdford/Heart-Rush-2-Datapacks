@@ -22,3 +22,6 @@ clone 10002 105 10008 10000 105 10006 10000 105 10006 replace force
 
 schedule clear main:lobby/update_signs
 schedule function main:lobby/update_signs 30s
+
+# update text displays
+execute as @e[type=minecraft:text_display] store result entity @s start_interpolation int 1 run data get entity @s start_interpolation
