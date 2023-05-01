@@ -1,0 +1,16 @@
+execute as @a if score @s book_skill00 = @s book_skill00 unless score @s book_skill00 matches 0 run function dynamic_skill:book/clicked/00
+execute as @a if score @s book_skill01 = @s book_skill01 unless score @s book_skill01 matches 0 run function dynamic_skill:book/clicked/01
+execute as @a if score @s book_skill02 = @s book_skill02 unless score @s book_skill02 matches 0 run function dynamic_skill:book/clicked/02
+execute as @a if score @s book_skill03 = @s book_skill03 unless score @s book_skill03 matches 0 run function dynamic_skill:book/clicked/03
+execute as @a if score @s book_skill04 = @s book_skill04 unless score @s book_skill04 matches 0 run function dynamic_skill:book/clicked/04
+execute as @a if score @s book_skill05 = @s book_skill05 unless score @s book_skill05 matches 0 run function dynamic_skill:book/clicked/05
+execute as @a if score @s book_skill06 = @s book_skill06 unless score @s book_skill06 matches 0 run function dynamic_skill:book/clicked/06
+execute as @a if score @s book_skill07 = @s book_skill07 unless score @s book_skill07 matches 0 run function dynamic_skill:book/clicked/07
+execute as @a if score @s book_skill08 = @s book_skill08 unless score @s book_skill08 matches 0 run function dynamic_skill:book/clicked/08
+execute as @a if score @s book_skill09 = @s book_skill09 unless score @s book_skill09 matches 0 run function dynamic_skill:book/clicked/09
+execute as @a if score @s book_skill10 = @s book_skill10 unless score @s book_skill10 matches 0 run function dynamic_skill:book/clicked/10
+execute as @a if score @s book_skill11 = @s book_skill11 unless score @s book_skill11 matches 0 run function dynamic_skill:book/clicked/11
+execute as @a if score @s book_skill12 = @s book_skill12 unless score @s book_skill12 matches 0 run function dynamic_skill:book/clicked/12
+execute as @a if score @s book_skill13 = @s book_skill13 unless score @s book_skill13 matches 0 run function dynamic_skill:book/clicked/13
+execute as @a if score @s book_skill14 = @s book_skill14 unless score @s book_skill14 matches 0 run function dynamic_skill:book/clicked/14
+execute as @a if score @s book_skill15 = @s book_skill15 unless score @s book_skill15 matches 0 run function dynamic_skill:book/clicked/15

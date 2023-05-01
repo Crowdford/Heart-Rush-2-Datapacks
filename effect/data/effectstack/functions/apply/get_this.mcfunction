@@ -1,0 +1,35 @@
+# returns array of all ids of effects on player
+data modify storage effectstack:main temp set value []
+execute if data storage effectstack:main player[{id:0}] if score #id effectstack matches 0 run data modify storage effectstack:main temp append value 0
+execute if data storage effectstack:main player[{id:1}] if score #id effectstack matches 1 run data modify storage effectstack:main temp append value 1
+execute if data storage effectstack:main player[{id:2}] if score #id effectstack matches 2 run data modify storage effectstack:main temp append value 2
+execute if data storage effectstack:main player[{id:3}] if score #id effectstack matches 3 run data modify storage effectstack:main temp append value 3
+execute if data storage effectstack:main player[{id:4}] if score #id effectstack matches 4 run data modify storage effectstack:main temp append value 4
+execute if data storage effectstack:main player[{id:5}] if score #id effectstack matches 5 run data modify storage effectstack:main temp append value 5
+execute if data storage effectstack:main player[{id:6}] if score #id effectstack matches 6 run data modify storage effectstack:main temp append value 6
+execute if data storage effectstack:main player[{id:7}] if score #id effectstack matches 7 run data modify storage effectstack:main temp append value 7
+execute if data storage effectstack:main player[{id:8}] if score #id effectstack matches 8 run data modify storage effectstack:main temp append value 8
+execute if data storage effectstack:main player[{id:9}] if score #id effectstack matches 9 run data modify storage effectstack:main temp append value 9
+execute if data storage effectstack:main player[{id:10}] if score #id effectstack matches 10 run data modify storage effectstack:main temp append value 10
+execute if data storage effectstack:main player[{id:11}] if score #id effectstack matches 11 run data modify storage effectstack:main temp append value 11
+execute if data storage effectstack:main player[{id:12}] if score #id effectstack matches 12 run data modify storage effectstack:main temp append value 12
+execute if data storage effectstack:main player[{id:13}] if score #id effectstack matches 13 run data modify storage effectstack:main temp append value 13
+execute if data storage effectstack:main player[{id:14}] if score #id effectstack matches 14 run data modify storage effectstack:main temp append value 14
+execute if data storage effectstack:main player[{id:15}] if score #id effectstack matches 15 run data modify storage effectstack:main temp append value 15
+execute if data storage effectstack:main player[{id:16}] if score #id effectstack matches 16 run data modify storage effectstack:main temp append value 16
+execute if data storage effectstack:main player[{id:17}] if score #id effectstack matches 17 run data modify storage effectstack:main temp append value 17
+execute if data storage effectstack:main player[{id:18}] if score #id effectstack matches 18 run data modify storage effectstack:main temp append value 18
+execute if data storage effectstack:main player[{id:19}] if score #id effectstack matches 19 run data modify storage effectstack:main temp append value 19
+execute if data storage effectstack:main player[{id:20}] if score #id effectstack matches 20 run data modify storage effectstack:main temp append value 20
+execute if data storage effectstack:main player[{id:21}] if score #id effectstack matches 21 run data modify storage effectstack:main temp append value 21
+execute if data storage effectstack:main player[{id:22}] if score #id effectstack matches 22 run data modify storage effectstack:main temp append value 22
+execute if data storage effectstack:main player[{id:23}] if score #id effectstack matches 23 run data modify storage effectstack:main temp append value 23
+execute if data storage effectstack:main player[{id:24}] if score #id effectstack matches 24 run data modify storage effectstack:main temp append value 24
+execute if data storage effectstack:main player[{id:25}] if score #id effectstack matches 25 run data modify storage effectstack:main temp append value 25
+execute if data storage effectstack:main player[{id:26}] if score #id effectstack matches 26 run data modify storage effectstack:main temp append value 26
+execute if data storage effectstack:main player[{id:27}] if score #id effectstack matches 27 run data modify storage effectstack:main temp append value 27
+execute if data storage effectstack:main player[{id:28}] if score #id effectstack matches 28 run data modify storage effectstack:main temp append value 28
+execute if data storage effectstack:main player[{id:29}] if score #id effectstack matches 29 run data modify storage effectstack:main temp append value 29
+execute if data storage effectstack:main player[{id:30}] if score #id effectstack matches 30 run data modify storage effectstack:main temp append value 30
+execute if data storage effectstack:main player[{id:31}] if score #id effectstack matches 31 run data modify storage effectstack:main temp append value 31
+execute if data storage effectstack:main player[{id:32}] if score #id effectstack matches 32 run data modify storage effectstack:main temp append value 32

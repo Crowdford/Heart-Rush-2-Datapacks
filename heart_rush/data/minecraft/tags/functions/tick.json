@@ -1,0 +1,7 @@
+{
+"replace": false,
+ "values": [
+ "main:main",
+ "egui:main"
+ ]
+}

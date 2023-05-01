@@ -1,0 +1,37 @@
+scoreboard players set digits dynamic_skill 5
+function dynamic_skill:internal/util/decode_binary
+execute if score int dynamic_skill matches 0 if score charCount dynamic_skill matches 0 run data modify storage dynamic_skill:main name append value "�"
+execute if score int dynamic_skill matches 1 run data modify storage dynamic_skill:main name append value "A"
+execute if score int dynamic_skill matches 2 run data modify storage dynamic_skill:main name append value "B"
+execute if score int dynamic_skill matches 3 run data modify storage dynamic_skill:main name append value "C"
+execute if score int dynamic_skill matches 4 run data modify storage dynamic_skill:main name append value "D"
+execute if score int dynamic_skill matches 5 run data modify storage dynamic_skill:main name append value "E"
+execute if score int dynamic_skill matches 6 run data modify storage dynamic_skill:main name append value "F"
+execute if score int dynamic_skill matches 7 run data modify storage dynamic_skill:main name append value "G"
+execute if score int dynamic_skill matches 8 run data modify storage dynamic_skill:main name append value "H"
+execute if score int dynamic_skill matches 9 run data modify storage dynamic_skill:main name append value "I"
+execute if score int dynamic_skill matches 10 run data modify storage dynamic_skill:main name append value "J"
+execute if score int dynamic_skill matches 11 run data modify storage dynamic_skill:main name append value "K"
+execute if score int dynamic_skill matches 12 run data modify storage dynamic_skill:main name append value "L"
+execute if score int dynamic_skill matches 13 run data modify storage dynamic_skill:main name append value "M"
+execute if score int dynamic_skill matches 14 run data modify storage dynamic_skill:main name append value "N"
+execute if score int dynamic_skill matches 15 run data modify storage dynamic_skill:main name append value "O"
+execute if score int dynamic_skill matches 16 run data modify storage dynamic_skill:main name append value "P"
+execute if score int dynamic_skill matches 17 run data modify storage dynamic_skill:main name append value "Q"
+execute if score int dynamic_skill matches 18 run data modify storage dynamic_skill:main name append value "R"
+execute if score int dynamic_skill matches 19 run data modify storage dynamic_skill:main name append value "S"
+execute if score int dynamic_skill matches 20 run data modify storage dynamic_skill:main name append value "T"
+execute if score int dynamic_skill matches 21 run data modify storage dynamic_skill:main name append value "U"
+execute if score int dynamic_skill matches 22 run data modify storage dynamic_skill:main name append value "V"
+execute if score int dynamic_skill matches 23 run data modify storage dynamic_skill:main name append value "W"
+execute if score int dynamic_skill matches 24 run data modify storage dynamic_skill:main name append value "X"
+execute if score int dynamic_skill matches 25 run data modify storage dynamic_skill:main name append value "Y"
+execute if score int dynamic_skill matches 26 run data modify storage dynamic_skill:main name append value "Z"
+execute if score int dynamic_skill matches 27 run data modify storage dynamic_skill:main name append value " "
+execute if score int dynamic_skill matches 28 run data modify storage dynamic_skill:main name append value "'"
+execute if score int dynamic_skill matches 29 run data modify storage dynamic_skill:main name append value "-"
+execute if score int dynamic_skill matches 30 run data modify storage dynamic_skill:main name append value "�"
+execute if score int dynamic_skill matches 31 run function dynamic_skill:internal/name/decode_char_alt
+
+execute unless score int dynamic_skill matches 0 unless score int dynamic_skill matches 27 run function dynamic_skill:internal/name/decode_chars
+execute if score int dynamic_skill matches 27 run function dynamic_skill:internal/name/decode_char_upper

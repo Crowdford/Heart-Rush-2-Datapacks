@@ -1,0 +1,2 @@
+function application_name:internal/simplify_callback
+tellraw @a ["",{"storage":"string:io","nbt":"out","interpret":true}," -> ",{"storage":"simplify:io","nbt":"out","interpret":true,"color":"green"},[{"text":"","color":"red"}," (",{"storage":"simplify:io","nbt":"letters","interpret":true},"|",{"storage":"simplify:io","nbt":"numbers","interpret":true},")"]]

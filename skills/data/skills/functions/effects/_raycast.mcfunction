@@ -1,0 +1,4 @@
+scoreboard players remove $1 SkillParams 1
+execute positioned ^ ^ ^0.1 unless block ~ ~ ~ #skills:transparent positioned ^ ^ ^-0.1 align xyz positioned ~0.5 ~0.5 ~0.5 run summon area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["skillRaycast"]}
+execute unless score $1 SkillParams matches 0.. positioned ^ ^ ^0.1 if block ~ ~ ~ #skills:transparent positioned ^ ^ ^-0.1 align xyz positioned ~0.5 ~0.5 ~0.5 run summon area_effect_cloud ~ ~ ~ {Radius:0.0f,Duration:2147483647,Tags:["skillRaycast"]}
+execute unless entity @e[type=area_effect_cloud,tag=skillRaycast,distance=..2] if score $1 SkillParams matches 0.. positioned ^ ^ ^0.1 run function skills:effects/_raycast

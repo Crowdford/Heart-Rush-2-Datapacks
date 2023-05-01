@@ -1,0 +1,3 @@
+execute if score players dynamic_skill matches 2..100 run tellraw @a {"translate":"dynskill.add_skill.votes_left.multiple","color":"gray","italic":true,"with":[{"score":{"name":"players","objective":"dynamic_skill"}}]}
+execute if score players dynamic_skill matches 1 run tellraw @a {"translate":"dynskill.add_skill.votes_left.single","color":"gray","italic":true,"with":[{"score":{"name":"players","objective":"dynamic_skill"}}]}
+execute if score players dynamic_skill matches ..-1 run scoreboard players set players dynamic_skill 0

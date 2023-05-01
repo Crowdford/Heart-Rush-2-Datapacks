@@ -1,0 +1,1 @@
+execute as @a[team=!red,team=!blue,team=!green,team=!yellow,team=!random] run function main:lobby/team

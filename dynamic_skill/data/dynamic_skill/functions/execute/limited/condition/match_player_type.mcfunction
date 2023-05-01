@@ -1,0 +1,2 @@
+execute if score $1 SkillParams matches 1 unless score @p[gamemode=adventure] lastTeam = @s lastTeam run function skills:condition_not_met
+execute if score $1 SkillParams matches 2 if score @p[gamemode=adventure] lastTeam = @s lastTeam run function skills:condition_not_met

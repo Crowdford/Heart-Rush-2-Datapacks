@@ -1,0 +1,1 @@
+execute as @a[scores={playerID=2}] run function main:game/block/placed/all

@@ -1,0 +1,1 @@
+execute unless score $sel SkillParams = $id SkillParams run scoreboard players set trigger_condition dynamic_skill 0

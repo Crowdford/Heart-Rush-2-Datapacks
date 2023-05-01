@@ -1,0 +1,2 @@
+execute if score @s deathPPlayerID = @s deathLPlayerID run scoreboard players operation @s deathPPlayerTime = @s death2PlayerTime
+execute if score @s deathPPlayerID = @s deathLPlayerID run scoreboard players operation @s deathPPlayerID = @s death2PlayerID

@@ -1,0 +1,12 @@
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 6 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 1 run scoreboard players set @s customCooldown 40
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 7 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 1 run scoreboard players set @s customCooldown 20
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 6 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 2 run scoreboard players set @s customCooldown 20
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 7 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 2 run scoreboard players set @s customCooldown 10
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 6 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 1 run scoreboard players set @s maxCustomC 40
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 7 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 1 run scoreboard players set @s maxCustomC 20
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 6 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 2 run scoreboard players set @s maxCustomC 20
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 7 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 2 run scoreboard players set @s maxCustomC 10
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 6 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 1 run scoreboard players set @s cooldownDura 2031
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 7 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 1 run scoreboard players set @s cooldownDura 2031
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 6 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 2 run scoreboard players set @s cooldownDura 2031
+execute if data entity @s SelectedItem{tag:{custom:"melee"}} if score @s eqmLevel matches 7 if score @s eqmPath1 matches 1 if score @s eqmPath2 matches 2 run scoreboard players set @s cooldownDura 2031

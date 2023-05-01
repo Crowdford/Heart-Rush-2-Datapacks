@@ -1,0 +1,9 @@
+execute positioned ~ ~ ~ run function main:game/item/void_charm_aura_row
+execute positioned ~0.33 ~ ~ run function main:game/item/void_charm_aura_row
+execute positioned ~ ~ ~0.33 run function main:game/item/void_charm_aura_row
+execute positioned ~-0.33 ~ ~ run function main:game/item/void_charm_aura_row
+execute positioned ~ ~ ~-0.33 run function main:game/item/void_charm_aura_row
+execute positioned ~0.33 ~ ~0.33 run function main:game/item/void_charm_aura_row
+execute positioned ~-0.33 ~ ~0.33 run function main:game/item/void_charm_aura_row
+execute positioned ~0.33 ~ ~-0.33 run function main:game/item/void_charm_aura_row
+execute positioned ~-0.33 ~ ~-0.33 run function main:game/item/void_charm_aura_row

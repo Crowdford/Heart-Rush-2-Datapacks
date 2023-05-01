@@ -1,0 +1,1 @@
+tellraw @s {"translate":"discord.msg","color":"gray","italic":true,"clickEvent":{"action":"open_url","value":"https://www.crowdford.com/discord/"}}

@@ -1,0 +1,1 @@
+scoreboard players set singleTeam Stats -100000

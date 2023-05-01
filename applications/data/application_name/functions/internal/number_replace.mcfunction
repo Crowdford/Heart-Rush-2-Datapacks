@@ -1,0 +1,6 @@
+execute if data storage simplify:main {char:"0"} run data modify storage simplify:main char set value "o"
+execute if data storage simplify:main {char:"1"} run data modify storage simplify:main char set value "i"
+execute if data storage simplify:main {char:"3"} run data modify storage simplify:main char set value "e"
+execute if data storage simplify:main {char:"4"} run data modify storage simplify:main char set value "a"
+execute if data storage simplify:main {char:"5"} run data modify storage simplify:main char set value "s"
+execute if data storage simplify:main {char:"7"} run data modify storage simplify:main char set value "t"

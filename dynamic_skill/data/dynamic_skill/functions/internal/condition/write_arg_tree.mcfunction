@@ -1,0 +1,1 @@
+data modify storage dynamic_skill:main condition.args append from storage text:out chars[0]

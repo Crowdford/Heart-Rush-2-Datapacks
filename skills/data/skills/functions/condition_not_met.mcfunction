@@ -1,0 +1,16 @@
+execute if score $cond SkillsCondition matches 0 run scoreboard players set met0 SkillsCondition 0
+execute if score $cond SkillsCondition matches 1 run scoreboard players set met1 SkillsCondition 0
+execute if score $cond SkillsCondition matches 2 run scoreboard players set met2 SkillsCondition 0
+execute if score $cond SkillsCondition matches 3 run scoreboard players set met3 SkillsCondition 0
+execute if score $cond SkillsCondition matches 4 run scoreboard players set met4 SkillsCondition 0
+execute if score $cond SkillsCondition matches 5 run scoreboard players set met5 SkillsCondition 0
+execute if score $cond SkillsCondition matches 6 run scoreboard players set met6 SkillsCondition 0
+execute if score $cond SkillsCondition matches 7 run scoreboard players set met7 SkillsCondition 0
+execute if score $cond SkillsCondition matches 8 run scoreboard players set met8 SkillsCondition 0
+execute if score $cond SkillsCondition matches 9 run scoreboard players set met9 SkillsCondition 0
+execute if score $cond SkillsCondition matches 10 run scoreboard players set met10 SkillsCondition 0
+execute if score $cond SkillsCondition matches 11 run scoreboard players set met11 SkillsCondition 0
+execute if score $cond SkillsCondition matches 12 run scoreboard players set met12 SkillsCondition 0
+execute if score $cond SkillsCondition matches 13 run scoreboard players set met13 SkillsCondition 0
+execute if score $cond SkillsCondition matches 14 run scoreboard players set met14 SkillsCondition 0
+execute if score $cond SkillsCondition matches 15 run scoreboard players set met15 SkillsCondition 0

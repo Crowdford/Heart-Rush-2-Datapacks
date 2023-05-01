@@ -1,0 +1,2 @@
+execute unless score @s deathLType matches 12 unless score @s deathLType = $1 SkillParams run function skills:condition_not_met
+execute if score @s deathLType matches 12 unless score @s deathLType = $1 SkillParams unless score @s deathLTypePrev = $1 SkillParams run function skills:condition_not_met

@@ -1,0 +1,1 @@
+tellraw @a [{"selector":"@s"},{"translate":" >> %s","with":[{"translate":"skills.debug"}],"color":"gray"}]

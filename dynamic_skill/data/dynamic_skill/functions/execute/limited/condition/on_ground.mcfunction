@@ -1,0 +1,2 @@
+execute if score $1 SkillParams matches 1 if data entity @s {OnGround:0b} run function skills:condition_not_met
+execute if score $1 SkillParams matches 2 if data entity @s {OnGround:1b} run function skills:condition_not_met

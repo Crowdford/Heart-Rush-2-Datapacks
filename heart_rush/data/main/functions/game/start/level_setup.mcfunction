@@ -1,0 +1,12 @@
+execute if score arena options matches 1 run function main:game/start/arena/1
+execute if score arena options matches 2 run function main:game/start/arena/2
+execute if score arena options matches 3 run function main:game/start/arena/3
+execute if score arena options matches 4 run function main:game/start/arena/4
+execute if score arena options matches 5 run function main:game/start/arena/5
+execute if score arena options matches 6 run function main:game/start/arena/6
+execute if score arena options matches 7 run function main:game/start/arena/7
+execute if score arena options matches 8 run function main:game/start/arena/8
+execute if score arena options matches 9 run function main:game/start/arena/9
+execute if score arena options matches 10 run function main:game/start/arena/10
+execute if score arena options matches 11 run function main:game/start/arena/11
+execute if score arena options matches 12 run function main:game/start/arena/12

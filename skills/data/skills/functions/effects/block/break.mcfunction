@@ -1,0 +1,1 @@
+function main:game/block/devalue

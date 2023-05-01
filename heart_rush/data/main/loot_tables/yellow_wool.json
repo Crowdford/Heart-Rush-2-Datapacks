@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dispenser",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 32
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Lock:\"locked\",Items:[{Slot:0b,id:\"minecraft:silverfish_spawn_egg\",Count:1b,tag:{EntityTag:{id:\"minecraft:item\",PickupDelay:1000,Item:{id:\"minecraft:yellow_concrete_powder\",Count:1b}}}}]},BlockStateTag:{facing:\"up\"},CanPlaceOn:[\"#main:all\"],CanDestroy:[\"#main:breakable\"],display:{Name:'{\"translate\":\"block.minecraft.yellow_wool\",\"italic\":false,\"color\":\"yellow\"}'},HideFlags:63,custom:\"block\",no_drop:1b,CustomModelData:4}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:copy_nbt",
+          "source": "this",
+          "ops": [
+            {
+              "source": "UUID",
+              "target": "BlockEntityTag.Items[0].tag.PlacerUUID",
+              "op": "replace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

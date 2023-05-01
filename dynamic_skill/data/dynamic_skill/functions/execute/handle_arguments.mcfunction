@@ -1,0 +1,7 @@
+execute store result score length dynamic_skill if data storage dynamic_skill:main args[]
+execute if score length dynamic_skill matches 1.. store result score $1 SkillParams run data get storage dynamic_skill:main args[0]
+execute if score length dynamic_skill matches 2.. store result score $2 SkillParams run data get storage dynamic_skill:main args[1]
+execute if score length dynamic_skill matches 3.. store result score $3 SkillParams run data get storage dynamic_skill:main args[2]
+execute if score length dynamic_skill matches 4.. store result score $4 SkillParams run data get storage dynamic_skill:main args[3]
+execute if score length dynamic_skill matches 5.. store result score $5 SkillParams run data get storage dynamic_skill:main args[4]
+execute if score length dynamic_skill matches 6.. store result score $6 SkillParams run data get storage dynamic_skill:main args[5]

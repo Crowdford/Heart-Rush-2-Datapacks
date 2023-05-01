@@ -1,0 +1,2 @@
+execute unless score @p[scores={pid=1..},team=!spectator,tag=!healthKilled] deathLType matches 12 unless score @p[scores={pid=1..},team=!spectator,tag=!healthKilled] deathLType = $1 SkillParams run function skills:condition_not_met
+execute if score @p[scores={pid=1..},team=!spectator,tag=!healthKilled] deathLType matches 12 unless score @p[scores={pid=1..},team=!spectator,tag=!healthKilled] deathLType = $1 SkillParams unless score @p[scores={pid=1..},team=!spectator,tag=!healthKilled] deathLTypePrev = $1 SkillParams run function skills:condition_not_met

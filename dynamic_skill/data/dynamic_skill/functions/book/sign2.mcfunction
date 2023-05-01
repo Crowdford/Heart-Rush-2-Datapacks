@@ -1,0 +1,1 @@
+tellraw @s [{"text":"","color":"gold"},{"translate":"dynskill.sign2.1","bold":true},"\n",{"translate":"dynskill.sign2.2","with":[{"translate":"[%s]","with":[{"translate":"dynskill.sign2.here"}],"bold":true,"clickEvent":{"action":"open_url","value":"https://www.crowdford.com/skills/library/"},"color":"#f7c154"}]},"\n",{"translate":"dynskill.sign2.3"}]

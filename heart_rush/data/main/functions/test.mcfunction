@@ -1,0 +1,1 @@
+tellraw @s [{"text":" |  ","color":"gray"},[{"translate":"%1$sskill.aaa.message.1%2$s","color":"gray","italic":false,"with":[{"translate":"space.-max","bold":false},["",[{"translate":"space.max","bold":false},{"translate":"space.-91","bold":false}],{"text":"aaa"}]]}]]

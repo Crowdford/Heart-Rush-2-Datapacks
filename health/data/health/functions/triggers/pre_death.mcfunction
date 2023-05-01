@@ -1,0 +1,2 @@
+execute unless data entity @s Inventory[{id:"minecraft:light_gray_dye"}] at @s run function #skills:events/player/on_death
+execute if data entity @s Inventory[{id:"minecraft:light_gray_dye"}] run function main:game/item/orb_of_resurrection

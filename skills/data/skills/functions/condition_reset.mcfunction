@@ -1,0 +1,16 @@
+scoreboard players reset met0 SkillsCondition
+scoreboard players reset met1 SkillsCondition
+scoreboard players reset met2 SkillsCondition
+scoreboard players reset met3 SkillsCondition
+scoreboard players reset met4 SkillsCondition
+scoreboard players reset met5 SkillsCondition
+scoreboard players reset met6 SkillsCondition
+scoreboard players reset met7 SkillsCondition
+scoreboard players reset met8 SkillsCondition
+scoreboard players reset met9 SkillsCondition
+scoreboard players reset met10 SkillsCondition
+scoreboard players reset met11 SkillsCondition
+scoreboard players reset met12 SkillsCondition
+scoreboard players reset met13 SkillsCondition
+scoreboard players reset met14 SkillsCondition
+scoreboard players reset met15 SkillsCondition

@@ -1,0 +1,13 @@
+data modify storage simplify:main temp set from storage simplify:main vowel_repl[0]
+data remove storage simplify:main vowel_repl[0]
+execute if data storage simplify:main {temp:"a"} run data modify storage simplify:main vowels append value ["a","l"]
+execute if data storage simplify:main {temp:"A"} run data modify storage simplify:main vowels append value ["a","u"]
+execute if data storage simplify:main {temp:"e"} run data modify storage simplify:main vowels append value ["e","l"]
+execute if data storage simplify:main {temp:"E"} run data modify storage simplify:main vowels append value ["e","u"]
+execute if data storage simplify:main {temp:"i"} run data modify storage simplify:main vowels append value ["i","l"]
+execute if data storage simplify:main {temp:"I"} run data modify storage simplify:main vowels append value ["i","u"]
+execute if data storage simplify:main {temp:"o"} run data modify storage simplify:main vowels append value ["o","l"]
+execute if data storage simplify:main {temp:"O"} run data modify storage simplify:main vowels append value ["o","u"]
+execute if data storage simplify:main {temp:"u"} run data modify storage simplify:main vowels append value ["u","l"]
+execute if data storage simplify:main {temp:"U"} run data modify storage simplify:main vowels append value ["u","u"]
+execute if data storage simplify:main vowel_repl[0] run function application_name:internal/vowel_find

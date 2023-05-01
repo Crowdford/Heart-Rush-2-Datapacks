@@ -1,0 +1,23 @@
+function #skills:off
+function skill_outburst:internal/on
+function skill_builder:internal/on
+function skill_pyrotechni:internal/on
+function skill_voidkiller:internal/on
+function skill_sacrificia:internal/on
+function skill_effectchal:internal/on
+function skill_guardianst:internal/on
+
+function skill_legacymine:internal/on
+function skill_runner:internal/on
+function skill_legacyrecy:internal/on
+function skill_legacysurv:internal/on
+function skill_legacyloot:internal/on
+function skill_legacypick:internal/on
+function skill_legacysafe:internal/on
+function skill_goldengrac:internal/on
+function skill_vengenace:internal/on
+function skill_persistenc:internal/on
+function skill_recharge:internal/on
+function skill_endershift:internal/on
+function skill_evader:internal/on
+function skill_archer:internal/on

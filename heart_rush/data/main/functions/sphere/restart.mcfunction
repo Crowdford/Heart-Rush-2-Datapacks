@@ -1,0 +1,1 @@
+scoreboard players set count2 particles -90
